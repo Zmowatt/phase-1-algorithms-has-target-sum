@@ -1,13 +1,20 @@
-function hasTargetSum(array, target) {
-  for (let i = 0; i < array.length; i++) {
-    for (let j = i + 1; j < array.length; j++) {
-      if (array[i] + array[j] === target) {
+function hasTargetSum(array, target){
+  
+  for(let i=0; i < array.length; i++ ) {
+    for(let j = i + 1; j < array.length; j++){
+      if( array[i] + array[j] === target){
+      
         return true;
-      }
+
+      }      
     }
+
   }
-  return false;
+  return false
 }
+
+
+
 
 /* 
   Write the Big O time complexity of your function here
